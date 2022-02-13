@@ -1,0 +1,416 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+}
+
+#container{
+    background-color: azure;
+    height: auto;
+    width: inherit;
+    padding: 0;
+}
+
+.nav-bar{
+    padding: 5px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar h1{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: black;
+}
+
+span{
+    opacity: 0;
+    transition: 1s ease;
+    
+}
+span.fade{
+    opacity:1;
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links li{
+    list-style: none;
+    margin: 10px;
+    border: none;
+    transition: width 2s;
+    color: black;
+}
+.nav-links li a {
+    text-decoration: none;
+    padding: 7px;
+    color: black;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    
+}
+.nav-links li a:hover{
+    border: none;
+    transition: 0.5s ease-in;
+    color: orange;
+    border-radius: 10px;
+}
+
+.nav-links li a:active{
+    border: none;
+    transition: 0.5s ease-in;
+    background: orange;
+    border-radius: 10px;
+}
+
+.hom {
+    color: red;
+}
+
+.banner{
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/2.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    z-index: -1;
+}
+
+.write-up{
+    position: relative;
+    top: 370px;
+    padding: 10px;
+}
+ h3 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    color:whitesmoke;
+}
+ span{
+    font-family: 'Rubik', sans-serif;
+}
+
+.details{
+    margin-top: 600px;
+    width: 100%;
+    height: 50px;
+    background: white;
+    padding: 10px 0;
+}
+
+.details h2{
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.details h2 strong {
+    color: red;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#about {
+    padding: 30px 0;
+    width: 100%;
+    height: auto;
+    background: whitesmoke;
+
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 40px;
+    padding: 10px 0;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.abt  {
+    padding: 10px;
+    width: 90%;
+    text-align: justify;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.abt strong {
+    color: orange;
+}
+
+.hobbies{
+    margin-top: 60px;
+    padding: 30px 0;
+    width: 100%;
+    height: auto;
+    background: white;
+}
+.hobbies h2 {
+    text-align: justify;
+    font-size: 30px;
+    padding: 10px 0;
+    font-family: 'Rubik', sans-serif;
+    color: orange;
+}
+
+.hob-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-left: 80px;
+}
+
+.hob-flex .hob1, .hob2, .hob3 {
+    margin-top: 20px;
+    padding: 5px;
+    width: 150px;
+    height: 100px;
+    background:black;
+    border-radius: 10px;
+}
+.hob1 p, .hob2 p, .hob3 p{
+    color: yellow;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: -5px;
+}
+
+.hob1 i {
+    color: white;
+    font-size: 60px;
+    padding: 0px, 0px;
+    margin-left:15px;
+}
+.hob2 i {
+    color: white;
+    font-size: 60px;
+    padding: 0px, 0px;
+    margin-left:15px;
+}
+.hob3 i {
+    color: white;
+    font-size: 60px;
+    padding: 0px, 0px;
+    margin-left:15px;
+}
+
+#skills  {
+    padding: 30px 0;
+    width: 100%;
+    height: auto;
+    background: whitesmoke;
+
+}
+
+.myskill{
+    padding: 10px;
+    width: 90%;
+    text-align: justify;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.myskill h2 {
+    text-align:center;
+    font-size: 40px;
+    padding: 10px 0;
+    font-family: 'Rubik', sans-serif;
+    color: orange;
+}
+
+.skill-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-left: 80px;
+}
+
+.skill-flex .skil-1, .skil-2, .skil-3, .skil-4, .skil-5 {
+    margin-top: 20px;
+    padding: 5px;
+    width: 150px;
+    height: 120px;
+    background:white;
+    border-radius: 10px;
+}
+.skil-1 p, .skil-2 p, .skil-3 p, .skil-4 p, .skil-5 p{
+    color: orange;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px;
+    text-align: center;  
+    margin-top: 2px;
+}
+
+.skil-1 img, .skil-2 img, .skil-3 img, .skil-4 img, .skil-5 img  {
+    width: 70px;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+#services {
+    padding: 30px 0;
+    width: 100%;
+    height: auto;
+    background: whitesmoke;
+}
+
+.my-service {
+    padding: 10px;
+    width: 90%;
+    text-align: justify;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.my-service h2 {
+    text-align:center;
+    font-size: 30px;
+    padding: 10px 0;
+    font-family: 'Rubik', sans-serif;
+    color: black;
+
+}
+.serv-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-left: 80px;
+}
+
+.serv-flex .serv-1, .serv-2, .serv-3 {
+    margin-top: 20px;
+    padding: 5px;
+    width: 250px;
+    height: 270px;
+    background:white;
+    border-radius: 7px;
+}
+
+.serv-1 h3, .serv-2 h3, .serv-3 h3{
+    color: black;
+    font-size: 22px;
+    font-weight: 900;
+    padding: 5px;
+    text-align: center;  
+    margin-top: -10px;
+}
+.serv-1 p, .serv-2 p{
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px;
+    text-align: center;  
+    margin-top: 5px;
+}
+
+.serv-3 p{
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 3px;
+    text-align: center;  
+    margin-top: 3px;
+}
+
+.ser i {
+    color: orange;
+    font-size: 90px;
+    padding:25px;
+    margin-left:10px;
+}
+
+
+
+
+#contact{
+    padding: 10px 0;
+    width: 100%;
+    height: auto;
+    background: black;
+}
+.social {
+    margin-top: 15px;
+    margin-left: 400px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social li {
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    border: 2px solid orange;
+    border-radius: 50px;
+}
+
+.social li a:hover{
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    margin:none;
+    padding:0;
+    color: black;
+}
+
+
+.social i {
+    margin-top: 9px;
+    margin-left: 8px;
+    color: white;
+}
+
+#contact h4 {
+    text-align:center;
+    font-size: 30px;
+    padding: 5px 0;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+#contact p {
+    text-align: center;
+    font-family: 'Latos', sans-serif;
+    color: white;
+}
+
+.top{
+    margin-top: -10px;
+    width: 35px;
+    background: whitesmoke;
+    height: 35px;
+    padding: 5px;
+    float: right;
+    border-radius: 15px;
+    margin-right: 20px;
+
+}
+.top i{
+    padding: 5px;
+    color: orange;
+}
